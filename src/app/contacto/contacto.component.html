@@ -1,0 +1,76 @@
+<!-- NAVBAR -->
+<div class="bg-STILeon container-fluid bg-STI">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-STILeon">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="../../assets/img/STILogo3.png" alt="Logo STILeon" style="width: 128px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link " routerLink="/inicio"><i class="fa-solid fa-house"></i> Inicio</a>
+          </li>
+          <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" routerLink="/productos"><i class="fa-solid fa-shop"></i> Productos</a>
+          </li>
+          <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link active" routerLink="/contacto"><i class="fa-solid fa-envelope"></i> Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- MODULO CONTACTO -->
+<div class="container mt-5">
+  <div class="row align-items-center">
+    <div class="col-md-6">
+      <h2 class="mb-4 text-center">¡Contáctanos!</h2>
+      <form>
+        <div class="mb-3">
+          <div class="row">
+            <div class="col">
+              <label for="name" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre">
+            </div>
+            <div class="col">
+              <label for="apellido" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="apellido" placeholder="Ingresa tu apellido">
+            </div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <div class="row">
+            <div class="col">
+              <label for="email" class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com">
+            </div>
+            <div class="col">
+              <label for="asunto" class="form-label">Asunto</label>
+              <input type="text" class="form-control" id="asunto" placeholder="Ingresa el asunto">
+            </div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="message" rows="5" placeholder="Escribe tu mensaje aquí"></textarea>
+        </div>
+        <button type="submit" class="w-100 btn btn-primary">Enviar</button>
+      </form>
+    </div>
+    <div class="col-md-6">
+      <div class="pt-5">
+        <h2 class="text-center">UBICACIÓN</h2>
+        <p class="text-center">Nuestras oficinas están ubicadas en Arboledas de ibarrilla 903-A</p>
+        <p class="text-center">Teléfono: 4775750989</p>
+        <p class="text-center">Correo: soporte&#64;solucionestileonmx.com</p>
+      </div>
+    </div>
+  </div>
+</div>
+

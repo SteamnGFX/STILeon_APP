@@ -1,1 +1,37 @@
-/* You can add global styles to this file, and also import other style files */
+/* COLORES */
+
+.bg-STILeon{
+  background-color: #005295;
+}
+
+/* ESTILOS DE LOADER PRODUCTOS */
+
+/* HTML: <div class="loader"></div> */
+.loaderCategorias {
+  width: fit-content;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 25px;
+  color: #0000;
+  background: linear-gradient(90deg,#C02942 calc(50% + 0.5ch),#000 0) right/calc(200% + 1ch) 100%;
+  -webkit-background-clip: text;
+          background-clip: text;
+  animation: l7 2s infinite steps(11);
+}
+.loaderCategorias:before {
+  content:"Cargando Categorías..."
+}
+@keyframes l7 {to{background-position: left}}
+
+.loaderProductos {
+  width: 40px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #f03355;
+  clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+  animation: l1 2s infinite cubic-bezier(0.3,1,0,1);
+}
+@keyframes l1 {
+  33% {border-radius: 0;background: #514b82 ;clip-path: polygon(0 0,100% 0,100% 100%,0 100%)}
+  66% {border-radius: 0;background: #ffa516 ;clip-path: polygon(50% 0,50% 0,100% 100%,0 100%)}
+}
